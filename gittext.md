@@ -26,6 +26,39 @@ git commit -m "Change to new Git account"
 git push origin <branch-name> 
 
 
+ ******  Git commands ********
+
+1-  git status
+
+2-  git add -A  (add all files changes)
+
+2-  git add path_of_file ( ex- application/controllers/<controller-file>.php)  -> add paticular files 
+
+3-  git commit -m 'write msg here'
+
+4-  git push origin  branchName  (use for  push your changes)
+
+5-  git checkout . (use to delete your change before commit)
+
+6-  git checkout branchName (go to given branch name)
+
+7-  git branch (To check your current branch) 
+
+8-  git checkout -b branchName (create new branch)
+
+9-  git fetch --all  (to use see all branch on this repo)
+
+10- git pull origin branchName (take pull)
+
+11- git log (see your commit)
+
+12- git clone  link (to clone new repo)
+
+13- git fetch origin (use to fetch branch)
+
+
+
+
 It looks like you're encountering an issue with large files exceeding GitHub's file size limit. GitHub has a file size limit of 100 MB, and the files mentioned in the error message are larger than that.
 
 The error message suggests using Git Large File Storage (LFS) to handle large files. Git LFS is an extension to Git that allows for versioning large files without storing them directly in the Git repository.

@@ -1,0 +1,75 @@
+angular dashboard  scratch  by using angualr material
+
+
+powershell -ExecutionPolicy Bypass
+
+1. **Create a New Angular Project:**
+
+   ng new project-name
+
+2  add material to your angualr project 
+
+ ng add @angular/material
+   
+3 create components 
+
+ng generate component components/header
+ng generate component components/sidebar
+ng generate component components/navbar
+ng generate component components/footer
+
+
+4 create components  pages 
+    
+ng generate component pages/dashboard
+ng generate component pages/login
+ng generate component pages/product
+ng generate component layouts/AdminLayout
+
+    
+5. **Generate a New Module:**
+  
+   ng generate module module-name
+
+6 ng generate module layouts/AdminLayout 
+
+7  create environments folder and files environment 
+
+8 npm install @ng-bootstrap/ng-bootstrap
+
+9 npm install chart.js
+  
+
+10 products  
+
+ng generate component components/products/brands
+ng generate component components/products/importprodutct
+ng generate component components/products/openingstock
+ng generate component components/products/printlabels
+ng generate component components/products/sellingpricegroup
+ng generate component components/products/unit
+ng generate component components/products/updateproductprice
+ng generate component components/products/variation
+ng generate component components/products/addproduct
+ng generate component components/products/category
+ng generate component components/products/productlist 
+
+
+ng generate component components/supplier/brands
+ng generate component components/supplier/importprodutct
+
+
+ng generate module components/products
+
+ng generate module components/products/products-routing --flat --module=products
+
+ng generate module layouts/AdminLayout-routing --flat --module=AdminLayout
+
+ng generate module layouts/ContentLayout  
+
+
+ng generate service service/nav
+ng generate service service/windows
+ng generate service service/table
+   
+ 
