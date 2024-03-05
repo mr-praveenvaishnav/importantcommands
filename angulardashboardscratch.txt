@@ -55,8 +55,8 @@ ng generate component components/products/category
 ng generate component components/products/productlist 
 
 
-ng generate component components/supplier/brands
-ng generate component components/supplier/importprodutct
+ng generate component components/supplier/addsupplier
+ng generate component components/supplier/supplierlist
 
 
 ng generate module components/products
@@ -73,3 +73,32 @@ ng generate service service/windows
 ng generate service service/table
    
  
+
+ ng generate component components/FeatherIcons
+
+npm i --save-dev @types/feather-icons 
+
+
+ ng generate component components/RightSidebar
+
+
+
+  ng generate component pages/customer/addCustomer
+
+
+  ng generate component pages/customer/addCustomer
+
+
+
+
+
+  ng generate component pages/customer/listCustomer
+  ng generate component pages/customer/addCustomer
+
+  
+Purchase 
+
+  ng generate component pages/purchase/addPurchase
+
+ ng generate component pages/report/activelog
+ng generate component pages/setting

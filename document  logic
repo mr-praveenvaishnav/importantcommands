@@ -1,0 +1,8 @@
+document  logic 
+
+One Login System for Multiple Projects 
+
+Some of the options I saw are the following:
+
+1 Token Based System
+2 Cookie Based System using Session
