@@ -3,9 +3,13 @@ composer create-project --prefer-dist laravel/zanzeomultivendor
 composer global require laravel/installer
 laravel --version
 
-laravel new project-name
+create new project 
 
-laravel new Zanzeomultivendore
+ //laravel new project-name
+
+change port 
+
+//php artisan serve --port=8002
 
 
 composer require tymon/jwt-auth 
@@ -86,3 +90,56 @@ Robust ecosystem and communtinty
 $student = DB::table('student' );
 $test = DB:table('test')
             ->union($student) get(); 
+
+
+
+
+Step 1: Create Multiple User Models:
+
+ <code>
+
+php artisan make:model User
+php artisan make:model Admin
+
+</code>
+
+
+<b>Step 2: Configure Authentication Guards: </b>
+
+
+<code>
+    'guards' => [
+    'web' => [
+        'driver' => 'session',
+        'provider' => 'users',
+    ],
+
+    'admin' => [
+        'driver' => 'session',
+        'provider' => 'admins',
+    ],
+],
+
+</code>.
+
+<b>Step 3: Define Authentication Providers: </b>
+
+<code>
+    'providers' => [
+    'users' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\User::class,
+    ],
+
+    'admins' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Admin::class,
+    ],
+],
+</code>
+
+<b>
+    Step 4: Implement Authentication Logic:
+
+</b>
+
