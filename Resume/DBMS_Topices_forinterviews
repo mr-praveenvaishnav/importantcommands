@@ -1,0 +1,107 @@
+Here are **100 key topics** related to **DBMS**, **RDBMS**, and **MongoDB** for senior developer interviews:
+
+### DBMS & RDBMS (General)
+1. DBMS vs RDBMS
+2. ACID properties (Atomicity, Consistency, Isolation, Durability)
+3. Normalization (1NF, 2NF, 3NF, BCNF, etc.)
+4. Denormalization
+5. SQL vs NoSQL databases
+6. SQL indexing techniques
+7. Transactions and transaction control (COMMIT, ROLLBACK, SAVEPOINT)
+8. Isolation levels (Read Uncommitted, Read Committed, Repeatable Read, Serializable)
+9. Stored procedures and triggers
+10. Constraints (Primary Key, Foreign Key, Unique, Check)
+11. Database Views
+12. Optimizing query performance
+13. Query optimization techniques
+14. Database partitioning
+15. Sharding in RDBMS
+16. Replication in databases
+17. Database recovery techniques
+18. Deadlocks and deadlock prevention
+19. Database security and encryption techniques
+20. SQL Injection (prevention and detection)
+21. Database migration strategies
+22. Index types (B-Tree, Hash, etc.)
+23. Cursors in SQL
+24. Joins (INNER, LEFT, RIGHT, FULL)
+25. Query execution plans (EXPLAIN, ANALYZE)
+26. Union vs Union All
+27. Grouping sets, ROLLUP, and CUBE
+28. Window functions (ROW_NUMBER, RANK, LEAD, LAG)
+29. Subqueries vs CTEs (Common Table Expressions)
+30. Materialized views vs Regular views
+31. OLTP vs OLAP
+32. Data Warehousing concepts
+33. ETL processes
+34. Database clustering
+35. Referential integrity
+36. ER diagrams and database design
+37. Pivoting data in SQL
+38. Cross joins vs natural joins
+39. Recursive queries
+40. Row vs Columnar databases
+41. Data consistency models (Eventual consistency, Strong consistency)
+42. Key differences between SQL Server, MySQL, PostgreSQL, Oracle
+
+### MongoDB (NoSQL)
+43. Introduction to NoSQL databases
+44. Document-based data models
+45. MongoDB architecture
+46. CRUD operations in MongoDB
+47. MongoDB indexing and performance optimization
+48. Schema design patterns in MongoDB
+49. Embedded vs Referenced documents in MongoDB
+50. MongoDB sharding
+51. Replication in MongoDB (Replica sets)
+52. CAP theorem
+53. Consistency models in MongoDB
+54. Aggregation framework in MongoDB
+55. Map-Reduce in MongoDB
+56. Working with BSON in MongoDB
+57. ACID transactions in MongoDB (since v4.0)
+58. Geospatial indexing in MongoDB
+59. MongoDB GridFS for storing large files
+60. MongoDB's change streams
+61. MongoDB Data Model Flexibility
+62. Data expiration in MongoDB (TTL indexes)
+63. Managing large datasets in MongoDB
+64. MongoDB's WiredTiger storage engine
+65. MongoDB replication internals
+66. Backup strategies in MongoDB
+67. Database versioning and migrations in MongoDB
+68. Aggregation pipeline stages (MATCH, GROUP, PROJECT, etc.)
+69. MongoDB Atlas (Cloud-based MongoDB service)
+70. Indexing in MongoDB (Single-field, Compound, Multikey, Text)
+71. Text search in MongoDB
+72. Handling schema changes in MongoDB
+73. Write concern and read concern in MongoDB
+74. Connection pooling in MongoDB
+75. MongoDB security (Authentication, Authorization, Encryption)
+76. Differences between MongoDB and traditional RDBMS
+77. Real-time analytics with MongoDB
+78. MongoDB query profiler
+79. MongoDB scalability techniques
+80. Atomic operations in MongoDB
+81. Aggregation vs MapReduce
+82. Working with MongoDB in distributed environments
+83. MongoDB's oplog for replication
+84. Handling complex queries in MongoDB
+85. MongoDB change data capture (CDC)
+86. MongoDB vs other NoSQL databases (Cassandra, CouchDB, etc.)
+87. Data validation in MongoDB
+88. MongoDB drivers (Node.js, Python, etc.)
+89. Capped collections in MongoDB
+90. Fault tolerance in MongoDB
+91. MongoDB monitoring tools (MMS, Ops Manager)
+92. Query optimization in MongoDB
+93. Handling large-scale writes and reads in MongoDB
+94. Implementing horizontal scaling in MongoDB
+95. Schema-less design implications in MongoDB
+96. Time-series data storage in MongoDB
+97. MongoDB for mobile apps (Realm integration)
+98. MongoDB's Aggregation Pipeline optimization
+99. MongoDB for IoT applications
+100. Best practices for securing MongoDB deployments
+
+These topics will help you cover a wide range of questions, from high-level architecture to advanced optimizations, making you well-prepared for interviews as a senior developer.

@@ -1,0 +1,14 @@
+# Install Create React App globally
+npm install -g create-react-app
+
+# Create a new React application
+create-react-app my-app
+
+# Navigate to the project directory
+cd my-app
+
+# Start the development server
+npm start
+
+
+

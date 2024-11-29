@@ -1,0 +1,135 @@
+In a Node.js project using EJS (Embedded JavaScript) for templating, you typically structure your application with routes and controllers to handle different parts of the application logic. Here’s a step-by-step guide to set up routes and call controller functions in an Express.js application.
+
+### Step 1: Set Up Your Project
+
+1. **Initialize the Project:**
+   ```bash
+   mkdir my-ejs-project
+   cd my-ejs-project
+   npm init -y
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install express ejs
+   ```
+
+### Step 2: Set Up the Directory Structure
+
+Here’s an example directory structure:
+
+```
+my-ejs-project/
+├── controllers/
+│   └── mainController.js
+├── routes/
+│   └── mainRoutes.js
+├── views/
+│   └── index.ejs
+├── app.js
+└── package.json
+```
+
+### Step 3: Create the Controller
+
+Create a controller to handle your application logic.
+
+#### `controllers/mainController.js`
+```javascript
+exports.homePage = (req, res) => {
+  res.render('index', { title: 'Home Page' });
+};
+
+exports.aboutPage = (req, res) => {
+  res.render('index', { title: 'About Page' });
+};
+```
+
+### Step 4: Define the Routes
+
+Create a routes file to handle the routes of your application and call the controller functions.
+
+#### `routes/mainRoutes.js`
+```javascript
+const express = require('express');
+const router = express.Router();
+const mainController = require('../controllers/mainController');
+
+router.get('/', mainController.homePage);
+router.get('/about', mainController.aboutPage);
+
+module.exports = router;
+```
+
+### Step 5: Set Up the Views
+
+Create an EJS view to render your HTML.
+
+#### `views/index.ejs`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <nav>
+        <a href="/">Home</a> | <a href="/about">About</a>
+    </nav>
+</body>
+</html>
+```
+
+### Step 6: Set Up the Application
+
+Create the main application file to set up Express and use the routes.
+
+#### `app.js`
+```javascript
+const express = require('express');
+const app = express();
+const path = require('path');
+const mainRoutes = require('./routes/mainRoutes');
+
+// Set the view engine to EJS
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+// Use the routes
+app.use('/', mainRoutes);
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+```
+
+### Step 7: Run the Application
+
+Start your application:
+
+```bash
+node app.js
+```
+
+Now, your Node.js application is set up with EJS as the templating engine. When you navigate to `http://localhost:3000/`, you should see the "Home Page" and when you navigate to `http://localhost:3000/about`, you should see the "About Page".
+
+### Explanation
+
+1. **Controller Functions:**
+   - The `mainController.js` file exports functions that render the EJS templates with the appropriate data.
+
+2. **Routes:**
+   - The `mainRoutes.js` file defines the routes and associates them with the controller functions.
+
+3. **Views:**
+   - The `index.ejs` file contains the HTML template that will be rendered by the controller functions.
+
+4. **App Setup:**
+   - The `app.js` file sets up the Express application, configures EJS as the view engine, and uses the defined routes.
+
+This structure helps in organizing your code, making it more maintainable and scalable as your application grows.

@@ -1,0 +1,16 @@
+react js next js app
+
+npx create-next-app@latest my-next-app
+cd my-next-app
+
+
+npm run dev
+
+
+if you use typescript then use this one 
+npm install --save-dev typescript @types/react @types/node
+
+
+
+
+
